@@ -47,7 +47,7 @@ function draw() {
   bow.y = World.mouseY
   
   // release arrow when space key is pressed
-  if (keyDown("space")) {
+  if (keyDown("space") ) {
     createArrow();  
   }
   
@@ -68,31 +68,31 @@ function draw() {
   
   if (arrowGroup.isTouching(redB)) {
     
-    //redB.destroyEach();
-    //redB.destroy();
-    //redB.Each();
-    //ballon.destroyEach();
+    redB.destroyEach();
+    /*redB.destroy();
+    redB.Each();
+    ballon.destroyEach();*/
     
     arrowGroup.destroyEach();
-    score=score+1;
+    score=score+7000000000;
   }
 
   if (arrowGroup.isTouching(greenB)) {
     greenB.destroyEach();
     arrowGroup.destroyEach();
-    score=score+3;
+    score=score+3000;
   }
 
   if (arrowGroup.isTouching(blueB)) {
     blueB.destroyEach();
     arrowGroup.destroyEach();
-    score=score+2;
+    score=score+200000;
   }
 
   if (arrowGroup.isTouching(pinkB)) {
     pinkB.destroyEach();
     arrowGroup.destroyEach();
-    score=score+1;
+    score=score+145465;
   }
 
   drawSprites();
@@ -149,6 +149,6 @@ function pinkBalloon() {
   //arrowGroup.addGroup(arrow);
   //arrow.add(arrowGroup);
   //arrowGroup.add();
-  //arrowGroup.add(arrow);
+  arrowGroup.add(arrow);
    
 }
